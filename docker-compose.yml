@@ -18,8 +18,9 @@ services:
       ports: 
         - "3306:3306"
       environment: 
-        MYSQL_DATABASE: "ogp-backend"
+        MYSQL_DATABASE: "ogp"
         MYSQL_ROOT_PASSWORD: "password"
+        TZ: "Asia/Tokyo"
 
     minio:
       image: "minio/minio"
