@@ -20,3 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('/messages', [MessageController::class, 'store']);
+Route::get('/messages/{id}', [MessageController::class, 'show']);

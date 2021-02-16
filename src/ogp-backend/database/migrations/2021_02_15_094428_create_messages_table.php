@@ -8,7 +8,7 @@ class CreateMessagesTable extends Migration
 {
   /**
    * Run the migrations.
-   *
+   hin
    * @return void
    */
   public function up()
