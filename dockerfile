@@ -13,6 +13,7 @@ ENV PATH $PATH:~/.composer/vendor/bin
 # install laravel
 RUN composer global require laravel/installer
 RUN composer require fruitcake/laravel-cors
+RUN composer require league/flysystem-aws-s3-v3:^1.0
 
 # install mysql driver
 RUN docker-php-ext-install pdo pdo_mysql
