@@ -1,7 +1,16 @@
 version: "3.8"
 services: 
-    web:
-        build: "./"
+    frontend:
+      build: "./docker/frontend"
+      working_dir: "/src/ogp-frontend"
+      command: "npm run dev"
+      ports: 
+        - "3000:3000"
+      volumes: 
+        - "./src:/src"
+
+    backend:
+        build: "./docker/backend"
         working_dir: "/src/ogp-backend"
         command: "php artisan serve --host 0.0.0.0 --port 8080"
         volumes: 
