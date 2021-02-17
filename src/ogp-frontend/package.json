@@ -14,8 +14,12 @@
     "@nuxt/typescript-runtime": "^2.0.1",
     "@nuxtjs/axios": "^5.12.5",
     "balm-ui": "^8.18.0",
+    "bulma": "^0.9.2",
     "core-js": "^3.8.3",
-    "nuxt": "^2.14.12"
+    "fibers": "^5.0.0",
+    "nuxt": "^2.14.12",
+    "sass": "^1.32.7",
+    "sass-loader": "^10.1.1"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.12",
